@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula03</title>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>Código GPT</h1>
+        </header>
+        <main class="container">
+            <div class="mensage-received">
+                <div>
+                    <h1 class="Atendente">Atendente diz:</h1>
+                    <p>Olá, boa tarde, o que gostaria?</p>
+                </div>
+            </div>
+            <div class="mensage-sent">
+                <div>
+                    <h1 class="MyMensage">Você diz:</h1>
+                    <p>Gostaria de solicitar um codigo em python para uma calculadora </p>
+                </div>
+            </div>       
+            <div class="mensage-received">
+                <div>
+                    <h1 class="Atendente">Atendente diz:</h1>
+                    <p>Primeiramente crie um arquivo .py na sua pasta de origem...</p>
+                </div>
+            </div>
+            <div class="mensage-received">
+                <div>
+                    <h1 class="Atendente">Atendente diz:</h1>
+                    <p>Logo enviaremos seu codigo...</p>
+                </div>
+            </div>
+            <div class="mensage-received">
+                <div>
+                    <h1 class="Atendente">Atendente diz:</h1>
+                    <p>def calcular():<br>
+                        while True:<br>
+                            print("Escolha a operação:")<br>
+                            print("1. Adição")<br>
+                            print("2. Subtração")<br>
+                            print("3. Multiplicação")<br>
+                            print("4. Divisão")<br>
+                            print("5. Sair")<br>
+                    
+                            escolha = input("Digite a opção (1/2/3/4/5): ")<br>
+                    
+                            if escolha == '5':<br>
+                                print("Encerrando a calculadora. Até mais!")<br>
+                                break
+                    
+                            if escolha in ('1', '2', '3', '4'):<br>
+                                try:<br>
+                                    num1 = float(input("Digite o primeiro número: "))<br>
+                                    num2 = float(input("Digite o segundo número: "))<br>
+                                except ValueError:<br>
+                                    print("Por favor, insira valores numéricos válidos.")<br>
+                                    continue<br>
+                    
+                                if escolha == '1':<br>
+                                    print(f"Resultado: {num1} + {num2} = {num1 + num2}")<br>
+                                elif escolha == '2':<br>
+                                    print(f"Resultado: {num1} - {num2} = {num1 - num2}")<br>
+                                elif escolha == '3':
+                                    print(f"Resultado: {num1} * {num2} = {num1 * num2}")<br>
+                                elif escolha == '4':<br>
+                                    if num2 == 0:<br>
+                                        print("Erro: Divisão por zero não é permitida.")<br>
+                                    else:<br>
+                                        print(f"Resultado: {num1} ÷ {num2} = {num1 / num2}")<br>
+                            else:<br>
+                                print("Opção inválida. Tente novamente.")<br>
+                    
+                    if __name__ == "__main__":<br>
+                        calcular()<br>
+                    </p>
+                </div>
+            </div>
+            <div class="mensage-sent">
+                <div>
+                    <h1 class="MyMensage">Você diz:</h1>
+                    <p>Muito Obrigado!!!</p>
+                </div>
+            </div>  
+        </main>
+        <footer>
+            <input placeholder="Insira sua mensagem" />
+            <button>Enviar</button>
+        </footer>
+    </div>
+</body>
+
+</html>

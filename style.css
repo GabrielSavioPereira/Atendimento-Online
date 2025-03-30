@@ -1,0 +1,95 @@
+h1 {
+    font-size: 1.3rem;
+    color: aliceblue;
+}
+
+p{
+ font-size: 1rem;
+}
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #00152b;
+    border-bottom: 1px black dashed;
+}
+
+.Atendente {
+    color: black;
+}
+
+.MyMensage{
+    color:black;
+}
+.container{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.main-container {
+    border: solid 1px black;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 80vh;
+    width: 50vw;
+    margin: 0 auto;
+}
+.mensage-sent div{
+    text-align: end;
+}
+
+.mensage-received, .mensage-sent {
+    display: flex;
+    width: auto;
+    margin: 0 0.5rem;
+}
+.mensage-sent{
+    justify-content: flex-end;
+}
+.mensage-sent div p{
+    border: 1px solid black;
+    max-width: 25rem;
+    padding: 0.5rem;
+}
+.mensage-received div p{ 
+    border: 1px solid black;
+    max-width: 25rem;
+    padding: 0.5rem;
+}
+footer {
+    background-color: #000080;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    border-top: black dashed 1px;
+}
+
+footer button{
+    width: 25%;
+    background-color: transparent;
+    border: 1px solid black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer button:hover{
+    transition: 0.5s;
+    background-color: green;
+}
+
+footer button:active{
+    transition: none;
+    background-color: #000d1a;
+}
+footer input{
+    width: 70%;
+    padding: 0.7rem;
+    background-color: transparent;
+    color:white;
+    border-color: black;
+    font-size: 1rem;
+    border-radius: 10px;
+    outline: none;
+    
+}
